@@ -23,7 +23,7 @@ def call_function(function_call_part, verbose=False):
         "get_file_content": lambda: get_file_content(
             working_directory, **kwargs
         ),
-        "write_file_content": lambda: write_file_content(
+        "write_file": lambda: write_file(
             working_directory, **kwargs
         ),
         "run_python_file": lambda: run_python_file(

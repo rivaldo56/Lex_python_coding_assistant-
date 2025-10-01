@@ -1,1 +1,1 @@
-print(15 + 5)
+print("Hello, World!")

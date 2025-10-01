@@ -14,6 +14,9 @@ from call_function import call_function
 def main():
     load_dotenv()
     api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        print("Error: GEMINI_API_KEY is not set. Create a .env with GEMINI_API_KEY=your_key or export it in the environment.")
+        sys.exit(1)
     client = genai.Client(api_key=api_key)
 
     system_prompt = (
@@ -100,6 +103,4 @@ You are not just coding — you’re **vibe coding**, teaching, and entertaining
     
 if __name__ == "__main__":
     main()
-load_dotenv()
-api_key = os.environ.get("GEMINI_API_KEY")
 
