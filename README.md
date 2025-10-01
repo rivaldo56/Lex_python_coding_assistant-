@@ -25,7 +25,7 @@ Agentic Loop – interprets user prompts and automatically calls tools until a t
 
 Clone the repo:
 
-git clone https://github.com/yourusername/Lex.git
+git clone https://github.com/rivaldo56/Lex_python_coding_assistant-
 cd Lex
 
 
